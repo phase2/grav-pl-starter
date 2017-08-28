@@ -2,8 +2,8 @@ version: '3.1'
 
 services:
   www:
-    container_name: gravtest_www
-    image: outrigger/apache-php:php70
+    container_name: gravpl_www
+    image: outrigger/apache-php:php71
     network_mode: "bridge"
     environment:
       DOCROOT: /var/www
@@ -11,5 +11,5 @@ services:
       - .:/var/www/
     labels:
       com.dnsdock.name: www
-      com.dnsdock.image: gravtest
-      outrigger.project: gravtest
+      com.dnsdock.image: gravpl
+      outrigger.project: gravpl
