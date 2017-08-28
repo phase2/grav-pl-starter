@@ -9,7 +9,7 @@ An example setup for building a Grav CMS site based on a Pattern Lab design syst
 
 ## How To Use This
 
-1. Rename the `user/themes/yourtheme` theme to something project-specific.
-2. Replace `user/themes/yourtheme/pattern-lab` with your real Pattern Lab setup.
+1. (Optional) Rename the `user/themes/gravpl` theme to something project-specific.
+2. Replace `user/themes/gravpl/pattern-lab` with your real Pattern Lab setup.
 3. Adjust the theme templates to match your actual Pattern Lab organisms.
 4. Add some content and profit!
