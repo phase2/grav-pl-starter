@@ -1,5 +1,6 @@
 .idea
 .DS_Store
+vendor
 app/logs
 app/cache
 app/user/themes/gravpl/dest
