@@ -2,3 +2,7 @@
 .DS_Store
 cache
 logs
+vendor
+app/user/themes/gravpl/dest
+app/user/themes/gravpl/fonts
+app/user/themes/gravpl/templates/_patterns

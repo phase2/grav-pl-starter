@@ -1,0 +1,28 @@
+{
+  "require": {
+    "phase2/pattern-lab-starter": "*"
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "phase2/pattern-lab-starter",
+        "version": "1.0.0",
+        "type": "package",
+        "source": {
+          "url": "git@github.com:phase2/pattern-lab-starter.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  ],
+  "scripts": {
+    "post-install-cmd": [
+      "./scripts/compile.sh"
+    ],
+    "post-update-cmd": [
+      "./scripts/compile.sh"
+    ]
+  }
+}

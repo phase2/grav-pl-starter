@@ -6,7 +6,7 @@ services:
     image: outrigger/apache-php:php71
     network_mode: "bridge"
     environment:
-      DOCROOT: /var/www
+      DOCROOT: /var/www/app
     volumes:
       - .:/var/www/
     labels:
