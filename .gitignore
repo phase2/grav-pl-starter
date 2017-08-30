@@ -1,5 +1,7 @@
 .idea
 .DS_Store
+app/logs
+app/cache
 app/user/themes/gravpl/dest
 app/user/themes/gravpl/fonts
 app/user/themes/gravpl/templates/_patterns
