@@ -1,0 +1,11 @@
+email: cclark@phase2technology.com
+fullname: Admin
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$Wc2tBQlW/nQL7fGBPjnO.OGIQDmfLiVxuXaepV8.B7SfkPOcHuMrO
