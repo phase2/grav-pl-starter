@@ -1,0 +1,21 @@
+version: 1.0
+
+scripts:
+
+  up:
+    alias: up
+    description: Start up operational docker containers.
+    run:
+      - docker-compose up
+
+  stop:
+    alias: stop
+    description: Halt operational containers.
+    run:
+      - docker-compose stop
+
+  logs:
+    alias: logs
+    description: Stream the logs produced by your Docker project containers. To limit output add '--tail=20'.
+    run:
+      - docker-compose logs -ft
