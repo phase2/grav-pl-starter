@@ -1,0 +1,27 @@
+name: Twig namespaces
+version: 0.1.0
+description: Enable twig namespacing
+icon: plug
+author:
+  name: Chris Clark
+  email: cclark@phase2technology.com
+homepage:
+demo:
+keywords: grav, plugin, twig, namespace
+bugs:
+docs:
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool

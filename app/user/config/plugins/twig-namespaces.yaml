@@ -1,0 +1,39 @@
+enabled: true
+namespaces:
+  base:
+    paths:
+      - user/themes/gravpl/templates/_patterns/00-base
+      - user/themes/gravpl/templates/_patterns/00-base/05-colors
+      - user/themes/gravpl/templates/_patterns/00-base/10-spacing
+      - user/themes/gravpl/templates/_patterns/00-base/15-typography/fonts
+      - user/themes/gravpl/templates/_patterns/00-base/15-typography/headings
+      - user/themes/gravpl/templates/_patterns/00-base/15-typography/lists
+      - user/themes/gravpl/templates/_patterns/00-base/15-typography/text
+      - user/themes/gravpl/templates/_patterns/00-base/animations/01-transitions
+      - user/themes/gravpl/templates/_patterns/00-base/breakpoints
+      - user/themes/gravpl/templates/_patterns/00-base/grids
+      - user/themes/gravpl/templates/_patterns/00-base/utilities/borders
+  atoms:
+    paths:
+      - user/themes/gravpl/templates/_patterns/01-atoms
+      - user/themes/gravpl/templates/_patterns/01-atoms/buttons
+      - user/themes/gravpl/templates/_patterns/01-atoms/images
+  molecules:
+    paths:
+      - user/themes/gravpl/templates/_patterns/02-molecules
+      - user/themes/gravpl/templates/_patterns/02-molecules/branding
+      - user/themes/gravpl/templates/_patterns/02-molecules/caption-block
+  organisms:
+    paths:
+      - user/themes/gravpl/templates/_patterns/03-organisms
+      - user/themes/gravpl/templates/_patterns/03-organisms/grids/caption-grid-block
+      - user/themes/gravpl/templates/_patterns/03-organisms/site/site-footer
+      - user/themes/gravpl/templates/_patterns/03-organisms/site/site-header
+  templates:
+    paths:
+      - user/themes/gravpl/templates/_patterns/04-templates
+      - user/themes/gravpl/templates/_patterns/04-templates/00-site
+      - user/themes/gravpl/templates/_patterns/04-templates/content-types
+  pages:
+    paths:
+      - user/themes/gravpl/templates/_patterns/05-pages

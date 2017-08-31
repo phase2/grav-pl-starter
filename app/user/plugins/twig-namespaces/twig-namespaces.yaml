@@ -1,0 +1,6 @@
+enabled: true
+namespaces:
+#  atoms:
+#    paths:
+#      - user/themes/custom_theme/templates/01-atoms
+#      - user/themes/custom_theme/templates/01-atoms/test
