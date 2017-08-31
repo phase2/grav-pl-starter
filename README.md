@@ -1,9 +1,9 @@
 # Grav Pattern Lab Starter
 An example setup for building a Grav CMS site based on a Pattern Lab design system.
 
-## Setup Instructions
+## Quick Start Instructions
 
-1. Run `composer install` and wait a minute.
+1. Run `composer install` to pull in Pattern Lab and compile it.
 2. Run `./scripts/serve.sh` or run `docker-compose up` if you're a Docker fan.
 3. View the site at [localhost:8000](http://localhost:8000).
 
