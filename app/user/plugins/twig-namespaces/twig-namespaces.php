@@ -30,7 +30,7 @@ class TwignamespacesPlugin extends Plugin
     }
 
     /**
-     * Initialize the plugin
+     * Initialize the plugin.
      */
     public function onPluginsInitialized()
     {
@@ -41,30 +41,22 @@ class TwignamespacesPlugin extends Plugin
 
         // Enable the main event we are interested in
         $this->enable([
-            'onTwigInitialized' => ['onTwigInitialized', 0]
+            'onTwigLoader' => ['onTwigLoader', 0]
         ]);
     }
 
     /**
-     * Enable twig namespaces for Grav.
-     *
-     * @param Event $e
+     * Enable Twig namespaces for Grav.
      */
-    public function onTwigInitialized(Event $e)
+    public function onTwigLoader()
     {
-      $twig_loader = new Twig_Loader_Filesystem($this->grav['twig']->twig_paths);
-      $config = $this->config->get('plugins.twig-namespaces');
-
-      if (array_key_exists("namespaces", $config)) {
-        $namespaceLoader = new Twig_Loader_Filesystem(array());
-        if ($config["namespaces"]) {
-          foreach ($config["namespaces"] as $namespace => $item) {
-            $namespaceLoader->setPaths($item["paths"], $namespace);
-          }
+        $config = $this->config->get('plugins.twig-namespaces');
+        if (!empty($config['namespaces'])) {
+            foreach ($config["namespaces"] as $namespace => $item) {
+                foreach ($item["paths"] as $path) {
+                    $this->grav['twig']->addPath($path, $namespace);
+                }
+            }
         }
-
-        $loader_chain = new Twig_Loader_Chain([$namespaceLoader, $twig_loader]);
-        $this->grav['twig']->twig->getLoader()->addLoader($loader_chain);
-      }
     }
 }
