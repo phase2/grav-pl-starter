@@ -11,13 +11,14 @@
         <link rel="canonical" href="{{ page.url(true, true) }}" />
 
         {% block stylesheets %}
-            {# {% do assets.addCss('theme://css/somefile.css', 102) %} #}
+             {% do assets.addCss('theme://dest/style.css', 102) %}
         {% endblock %}
         {{ assets.css() }}
 
         {% block javascripts %}
-            {# {% do assets.addJs('jquery') %} #}
-            {# {% do assets.addJs('theme://js/somefile.js') %} #}
+          {% do assets.addJs('theme://dest/bower--deps.min.js', {'group':'bottom'}) %}
+          {% do assets.addJs('theme://dest/bower--devDeps.min.js', {'group':'bottom'}) %}
+          {% do assets.addJs('theme://dest/scripts.js', {'group':'bottom'}) %}
         {% endblock %}
         {{ assets.js() }}
     {% endblock head %}
@@ -28,6 +29,7 @@
 
     <header class="site__header" role="banner">
         {% block header %}
+          {% include "@organisms/site-header.twig" %}
         {% endblock %}
     </header>
 
@@ -37,6 +39,7 @@
 
     {% block footer %}
         <footer class="site__footer" role="contentinfo">
+          {% include "@organisms/site-footer.twig" %}
         </footer>
     {% endblock %}
 

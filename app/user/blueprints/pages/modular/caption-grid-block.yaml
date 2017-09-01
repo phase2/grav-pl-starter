@@ -1,0 +1,51 @@
+title: Caption Grid Block
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+            header.columns:
+              type: radio
+              label: Columns
+              help: Number of columns to display cards in.
+              default: 4
+              options:
+                3: 3 columns
+                4: 4 columns
+            header.links:
+              type: list
+              style: vertical
+              label: Links
+              fields:
+                .title:
+                  type: text
+                  label: Title
+                .content:
+                  type: markdown
+                  label: Summary
+                  validate:
+                    type: textarea
+                .url:
+                  type: text
+                  label: URL
+                .target:
+                  type: select
+                  size: small
+                  label: Link Target
+                  options:
+                    false: none
+                    _blank: _blank
+                .image:
+                  type: pagemediaselect
+                  label: Image (Upload above)
+                .img_alt:
+                  type: text
+                  label: Image Alt
