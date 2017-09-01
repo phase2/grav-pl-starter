@@ -10,7 +10,7 @@ links:
         img_alt: 'Alt text'
     -
         title: 'Item 2'
-        content: "Markdown also **availble**.\r\n1. item1\r\n2. item2\r\n3. item3"
+        content: "Markdown also **available**.\r\n1. item1\r\n2. item2\r\n3. item3"
         target: '0'
         image: 'apparitions of franz josef land-2442x1630-1.jpg'
         img_alt: 'Alt Text 2'
